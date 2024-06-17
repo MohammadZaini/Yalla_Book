@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9118D002C10E3B900D33DD8 /* BookAnAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9118CFF2C10E3B900D33DD8 /* BookAnAppointmentViewController.swift */; };
+		C91C4C142C184B5A00836EC0 /* BookingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C4C132C184B5A00836EC0 /* BookingData.swift */; };
+		C92AF6512C1B90EB0096988F /* RoomLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AF6502C1B90EB0096988F /* RoomLogic.swift */; };
+		C9419C932C15E2530057AE2B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9419C922C15E2530057AE2B /* ColorExtension.swift */; };
+		C9419C9B2C15FAB90057AE2B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9419C9A2C15FAB90057AE2B /* DateHelper.swift */; };
+		C9419C9D2C160B5D0057AE2B /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9419C9C2C160B5D0057AE2B /* AlertHelper.swift */; };
+		C9419C9F2C16256C0057AE2B /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9419C9E2C16256C0057AE2B /* UIHelper.swift */; };
+		C94D33C02C19D675006B171E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D33BF2C19D675006B171E /* RealmHelper.swift */; };
+		C94D33C22C19E61B006B171E /* BookingLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D33C12C19E61B006B171E /* BookingLogic.swift */; };
+		C9DDFACB2BFF836C00CC43A2 /* RoomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDFACA2BFF836C00CC43A2 /* RoomData.swift */; };
+		C9DDFACD2BFF860800CC43A2 /* RoomDetailLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDFACC2BFF860800CC43A2 /* RoomDetailLogic.swift */; };
+		C9E919FD2BFE358F00B5FA95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E919FC2BFE358F00B5FA95 /* AppDelegate.swift */; };
+		C9E919FF2BFE358F00B5FA95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E919FE2BFE358F00B5FA95 /* SceneDelegate.swift */; };
+		C9E91A042BFE358F00B5FA95 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9E91A032BFE358F00B5FA95 /* Base */; };
+		C9E91A062BFE359100B5FA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E91A052BFE359100B5FA95 /* Assets.xcassets */; };
+		C9E91A092BFE359100B5FA95 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9E91A082BFE359100B5FA95 /* Base */; };
+		C9E91A172BFE369700B5FA95 /* HotelCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A152BFE369700B5FA95 /* HotelCardCell.swift */; };
+		C9E91A182BFE369700B5FA95 /* HotelCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E91A162BFE369700B5FA95 /* HotelCardCell.xib */; };
+		C9E91A1A2BFE3B9900B5FA95 /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A192BFE3B9900B5FA95 /* HotelsViewController.swift */; };
+		C9E91A1C2BFE5C3000B5FA95 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A1B2BFE5C3000B5FA95 /* RoomsViewController.swift */; };
+		C9E91A1F2BFE5C5D00B5FA95 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A1D2BFE5C5D00B5FA95 /* RoomTableViewCell.swift */; };
+		C9E91A202BFE5C5D00B5FA95 /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E91A1E2BFE5C5D00B5FA95 /* RoomTableViewCell.xib */; };
+		C9E91A222BFE88CD00B5FA95 /* RoomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A212BFE88CD00B5FA95 /* RoomDetailsViewController.swift */; };
+		C9E91A242BFECC1000B5FA95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A232BFECC1000B5FA95 /* Constants.swift */; };
+		C9E91A262BFECE6000B5FA95 /* HotelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A252BFECE6000B5FA95 /* HotelData.swift */; };
+		C9E91A282BFECF2C00B5FA95 /* HotelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E91A272BFECF2C00B5FA95 /* HotelLogic.swift */; };
+		C9F20E222C1759780072EF14 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F20E202C1759780072EF14 /* RoomCollectionViewCell.swift */; };
+		C9F20E232C1759780072EF14 /* RoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F20E212C1759780072EF14 /* RoomCollectionViewCell.xib */; };
+		EF9EF41B408A8127BFC958D0 /* Pods_YallaBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373D42CE6269456FFBC36C89 /* Pods_YallaBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		373D42CE6269456FFBC36C89 /* Pods_YallaBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YallaBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64910903D4527152EEAF427C /* Pods-YallaBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaBook.debug.xcconfig"; path = "Target Support Files/Pods-YallaBook/Pods-YallaBook.debug.xcconfig"; sourceTree = "<group>"; };
+		C9118CFF2C10E3B900D33DD8 /* BookAnAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAnAppointmentViewController.swift; sourceTree = "<group>"; };
+		C91C4C132C184B5A00836EC0 /* BookingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingData.swift; sourceTree = "<group>"; };
+		C92AF6502C1B90EB0096988F /* RoomLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLogic.swift; sourceTree = "<group>"; };
+		C9419C922C15E2530057AE2B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C9419C9A2C15FAB90057AE2B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		C9419C9C2C160B5D0057AE2B /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		C9419C9E2C16256C0057AE2B /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		C94D33BF2C19D675006B171E /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		C94D33C12C19E61B006B171E /* BookingLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLogic.swift; sourceTree = "<group>"; };
+		C9DDFACA2BFF836C00CC43A2 /* RoomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomData.swift; sourceTree = "<group>"; };
+		C9DDFACC2BFF860800CC43A2 /* RoomDetailLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailLogic.swift; sourceTree = "<group>"; };
+		C9E919F92BFE358F00B5FA95 /* YallaBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YallaBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E919FC2BFE358F00B5FA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9E919FE2BFE358F00B5FA95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C9E91A032BFE358F00B5FA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9E91A052BFE359100B5FA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9E91A082BFE359100B5FA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9E91A0A2BFE359100B5FA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E91A152BFE369700B5FA95 /* HotelCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCell.swift; sourceTree = "<group>"; };
+		C9E91A162BFE369700B5FA95 /* HotelCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelCardCell.xib; sourceTree = "<group>"; };
+		C9E91A192BFE3B9900B5FA95 /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
+		C9E91A1B2BFE5C3000B5FA95 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		C9E91A1D2BFE5C5D00B5FA95 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		C9E91A1E2BFE5C5D00B5FA95 /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
+		C9E91A212BFE88CD00B5FA95 /* RoomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewController.swift; sourceTree = "<group>"; };
+		C9E91A232BFECC1000B5FA95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C9E91A252BFECE6000B5FA95 /* HotelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelData.swift; sourceTree = "<group>"; };
+		C9E91A272BFECF2C00B5FA95 /* HotelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelLogic.swift; sourceTree = "<group>"; };
+		C9F20E202C1759780072EF14 /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9F20E212C1759780072EF14 /* RoomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCollectionViewCell.xib; sourceTree = "<group>"; };
+		F1CD08878E705507AF1C0116 /* Pods-YallaBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaBook.release.xcconfig"; path = "Target Support Files/Pods-YallaBook/Pods-YallaBook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9E919F62BFE358F00B5FA95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9EF41B408A8127BFC958D0 /* Pods_YallaBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C91C4C122C184B2F00836EC0 /* BookingModel */ = {
+			isa = PBXGroup;
+			children = (
+				C91C4C132C184B5A00836EC0 /* BookingData.swift */,
+				C94D33C12C19E61B006B171E /* BookingLogic.swift */,
+			);
+			path = BookingModel;
+			sourceTree = "<group>";
+		};
+		C91C4C152C18D49B00836EC0 /* BookingControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9118CFF2C10E3B900D33DD8 /* BookAnAppointmentViewController.swift */,
+			);
+			path = BookingControllers;
+			sourceTree = "<group>";
+		};
+		C9419C8E2C15E1A50057AE2B /* HotelModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9E91A252BFECE6000B5FA95 /* HotelData.swift */,
+				C9E91A272BFECF2C00B5FA95 /* HotelLogic.swift */,
+			);
+			path = HotelModel;
+			sourceTree = "<group>";
+		};
+		C9419C8F2C15E1B30057AE2B /* RoomModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDFACA2BFF836C00CC43A2 /* RoomData.swift */,
+				C9DDFACC2BFF860800CC43A2 /* RoomDetailLogic.swift */,
+				C92AF6502C1B90EB0096988F /* RoomLogic.swift */,
+			);
+			path = RoomModel;
+			sourceTree = "<group>";
+		};
+		C9419C902C15E21F0057AE2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9419C912C15E22A0057AE2B /* Color */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9419C912C15E22A0057AE2B /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				C9419C922C15E2530057AE2B /* ColorExtension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		C9419C942C15E2B30057AE2B /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				C9E91A192BFE3B9900B5FA95 /* HotelsViewController.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		C9419C952C15E2CC0057AE2B /* RoomControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E91A1B2BFE5C3000B5FA95 /* RoomsViewController.swift */,
+				C9E91A212BFE88CD00B5FA95 /* RoomDetailsViewController.swift */,
+			);
+			path = RoomControllers;
+			sourceTree = "<group>";
+		};
+		C9CD6A11556136E7B950C2AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				373D42CE6269456FFBC36C89 /* Pods_YallaBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9E919F02BFE358F00B5FA95 = {
+			isa = PBXGroup;
+			children = (
+				C9E919FB2BFE358F00B5FA95 /* YallaBook */,
+				C9E919FA2BFE358F00B5FA95 /* Products */,
+				F6AD511EA38B728649B227D4 /* Pods */,
+				C9CD6A11556136E7B950C2AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9E919FA2BFE358F00B5FA95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9E919F92BFE358F00B5FA95 /* YallaBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9E919FB2BFE358F00B5FA95 /* YallaBook */ = {
+			isa = PBXGroup;
+			children = (
+				C9E919FC2BFE358F00B5FA95 /* AppDelegate.swift */,
+				C9E919FE2BFE358F00B5FA95 /* SceneDelegate.swift */,
+				C9419C902C15E21F0057AE2B /* Extensions */,
+				C9E91A132BFE35E000B5FA95 /* Models */,
+				C9E91A112BFE35C200B5FA95 /* Controllers */,
+				C9E91A122BFE35D400B5FA95 /* Views */,
+				C9E91A142BFE35F700B5FA95 /* Helpers */,
+				C9E91A0A2BFE359100B5FA95 /* Info.plist */,
+				C9E91A232BFECC1000B5FA95 /* Constants.swift */,
+			);
+			path = YallaBook;
+			sourceTree = "<group>";
+		};
+		C9E91A112BFE35C200B5FA95 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9419C942C15E2B30057AE2B /* MainController */,
+				C9419C952C15E2CC0057AE2B /* RoomControllers */,
+				C91C4C152C18D49B00836EC0 /* BookingControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9E91A122BFE35D400B5FA95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9E91A022BFE358F00B5FA95 /* Main.storyboard */,
+				C9F20E242C1777790072EF14 /* HotelViews */,
+				C9F20E252C17778C0072EF14 /* RoomViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9E91A132BFE35E000B5FA95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9419C8E2C15E1A50057AE2B /* HotelModel */,
+				C9419C8F2C15E1B30057AE2B /* RoomModel */,
+				C91C4C122C184B2F00836EC0 /* BookingModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9E91A142BFE35F700B5FA95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E91A052BFE359100B5FA95 /* Assets.xcassets */,
+				C9E91A072BFE359100B5FA95 /* LaunchScreen.storyboard */,
+				C9419C9A2C15FAB90057AE2B /* DateHelper.swift */,
+				C9419C9C2C160B5D0057AE2B /* AlertHelper.swift */,
+				C9419C9E2C16256C0057AE2B /* UIHelper.swift */,
+				C94D33BF2C19D675006B171E /* RealmHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C9F20E242C1777790072EF14 /* HotelViews */ = {
+			isa = PBXGroup;
+			children = (
+				C9E91A152BFE369700B5FA95 /* HotelCardCell.swift */,
+				C9E91A162BFE369700B5FA95 /* HotelCardCell.xib */,
+			);
+			path = HotelViews;
+			sourceTree = "<group>";
+		};
+		C9F20E252C17778C0072EF14 /* RoomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C9F20E202C1759780072EF14 /* RoomCollectionViewCell.swift */,
+				C9F20E212C1759780072EF14 /* RoomCollectionViewCell.xib */,
+				C9E91A1D2BFE5C5D00B5FA95 /* RoomTableViewCell.swift */,
+				C9E91A1E2BFE5C5D00B5FA95 /* RoomTableViewCell.xib */,
+			);
+			path = RoomViews;
+			sourceTree = "<group>";
+		};
+		F6AD511EA38B728649B227D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64910903D4527152EEAF427C /* Pods-YallaBook.debug.xcconfig */,
+				F1CD08878E705507AF1C0116 /* Pods-YallaBook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9E919F82BFE358F00B5FA95 /* YallaBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E91A0D2BFE359100B5FA95 /* Build configuration list for PBXNativeTarget "YallaBook" */;
+			buildPhases = (
+				D34910029471DA577A0A5B1C /* [CP] Check Pods Manifest.lock */,
+				C9E919F52BFE358F00B5FA95 /* Sources */,
+				C9E919F62BFE358F00B5FA95 /* Frameworks */,
+				C9E919F72BFE358F00B5FA95 /* Resources */,
+				D7363391DD7138CC8A738324 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YallaBook;
+			productName = YallaBook;
+			productReference = C9E919F92BFE358F00B5FA95 /* YallaBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9E919F12BFE358F00B5FA95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C9E919F82BFE358F00B5FA95 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = C9E919F42BFE358F00B5FA95 /* Build configuration list for PBXProject "YallaBook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9E919F02BFE358F00B5FA95;
+			productRefGroup = C9E919FA2BFE358F00B5FA95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E919F82BFE358F00B5FA95 /* YallaBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9E919F72BFE358F00B5FA95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E91A202BFE5C5D00B5FA95 /* RoomTableViewCell.xib in Resources */,
+				C9F20E232C1759780072EF14 /* RoomCollectionViewCell.xib in Resources */,
+				C9E91A182BFE369700B5FA95 /* HotelCardCell.xib in Resources */,
+				C9E91A062BFE359100B5FA95 /* Assets.xcassets in Resources */,
+				C9E91A092BFE359100B5FA95 /* Base in Resources */,
+				C9E91A042BFE358F00B5FA95 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D34910029471DA577A0A5B1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YallaBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7363391DD7138CC8A738324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YallaBook/Pods-YallaBook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YallaBook/Pods-YallaBook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YallaBook/Pods-YallaBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9E919F52BFE358F00B5FA95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9419C9B2C15FAB90057AE2B /* DateHelper.swift in Sources */,
+				C94D33C02C19D675006B171E /* RealmHelper.swift in Sources */,
+				C9E91A1F2BFE5C5D00B5FA95 /* RoomTableViewCell.swift in Sources */,
+				C9E91A172BFE369700B5FA95 /* HotelCardCell.swift in Sources */,
+				C9E919FD2BFE358F00B5FA95 /* AppDelegate.swift in Sources */,
+				C9419C9D2C160B5D0057AE2B /* AlertHelper.swift in Sources */,
+				C9E91A1C2BFE5C3000B5FA95 /* RoomsViewController.swift in Sources */,
+				C91C4C142C184B5A00836EC0 /* BookingData.swift in Sources */,
+				C9E91A1A2BFE3B9900B5FA95 /* HotelsViewController.swift in Sources */,
+				C9419C932C15E2530057AE2B /* ColorExtension.swift in Sources */,
+				C9DDFACD2BFF860800CC43A2 /* RoomDetailLogic.swift in Sources */,
+				C9E91A262BFECE6000B5FA95 /* HotelData.swift in Sources */,
+				C94D33C22C19E61B006B171E /* BookingLogic.swift in Sources */,
+				C92AF6512C1B90EB0096988F /* RoomLogic.swift in Sources */,
+				C9E91A222BFE88CD00B5FA95 /* RoomDetailsViewController.swift in Sources */,
+				C9DDFACB2BFF836C00CC43A2 /* RoomData.swift in Sources */,
+				C9419C9F2C16256C0057AE2B /* UIHelper.swift in Sources */,
+				C9118D002C10E3B900D33DD8 /* BookAnAppointmentViewController.swift in Sources */,
+				C9E919FF2BFE358F00B5FA95 /* SceneDelegate.swift in Sources */,
+				C9E91A242BFECC1000B5FA95 /* Constants.swift in Sources */,
+				C9E91A282BFECF2C00B5FA95 /* HotelLogic.swift in Sources */,
+				C9F20E222C1759780072EF14 /* RoomCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9E91A022BFE358F00B5FA95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E91A032BFE358F00B5FA95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9E91A072BFE359100B5FA95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E91A082BFE359100B5FA95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9E91A0B2BFE359100B5FA95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9E91A0C2BFE359100B5FA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9E91A0E2BFE359100B5FA95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64910903D4527152EEAF427C /* Pods-YallaBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YallaBook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Moe.YallaBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9E91A0F2BFE359100B5FA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1CD08878E705507AF1C0116 /* Pods-YallaBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YallaBook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Moe.YallaBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9E919F42BFE358F00B5FA95 /* Build configuration list for PBXProject "YallaBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E91A0B2BFE359100B5FA95 /* Debug */,
+				C9E91A0C2BFE359100B5FA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E91A0D2BFE359100B5FA95 /* Build configuration list for PBXNativeTarget "YallaBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E91A0E2BFE359100B5FA95 /* Debug */,
+				C9E91A0F2BFE359100B5FA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9E919F12BFE358F00B5FA95 /* Project object */;
+}

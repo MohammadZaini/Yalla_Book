@@ -1,0 +1,6 @@
+framework module Pods_YallaBook {
+  umbrella header "Pods-YallaBook-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="hotelCard" id="gTV-IL-0wX" customClass="HotelCardCell" customModule="YallaBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="261"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="261"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fsa-y7-Bjk">
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="261"/>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.85410000630000005" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tha-mI-X60">
+                        <rect key="frame" x="15" y="15" width="300" height="231"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0NT-ta-3XU">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="SKW-dv-GZE"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ub0-en-a73">
+                                <rect key="frame" x="0.0" y="210" width="300" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFK-ks-zDd">
+                                        <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNq-oc-mkH">
+                                        <rect key="frame" x="101.66666666666666" y="0.0" width="96.666666666666657" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stars" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUS-jG-B3c">
+                                        <rect key="frame" x="203.33333333333334" y="0.0" width="96.666666666666657" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0NT-ta-3XU" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.909091" priority="999" id="349-wr-Mwc"/>
+                <constraint firstItem="Fsa-y7-Bjk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GNO-k3-KoD"/>
+                <constraint firstItem="tha-mI-X60" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="RYe-Kp-3RC"/>
+                <constraint firstAttribute="trailing" secondItem="tha-mI-X60" secondAttribute="trailing" constant="15" id="Rtd-k7-YKa"/>
+                <constraint firstItem="tha-mI-X60" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="bPY-HB-CTi"/>
+                <constraint firstItem="Fsa-y7-Bjk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cSf-MA-GBQ"/>
+                <constraint firstAttribute="bottom" secondItem="tha-mI-X60" secondAttribute="bottom" constant="15" id="lH5-u2-YIZ"/>
+                <constraint firstAttribute="trailing" secondItem="Fsa-y7-Bjk" secondAttribute="trailing" id="sfR-tU-9uW"/>
+                <constraint firstAttribute="bottom" secondItem="Fsa-y7-Bjk" secondAttribute="bottom" id="vL7-fC-upC"/>
+            </constraints>
+            <size key="customSize" width="330" height="261"/>
+            <connections>
+                <outlet property="hotelImageView" destination="0NT-ta-3XU" id="Zx7-VJ-Dek"/>
+                <outlet property="hotelName" destination="LFK-ks-zDd" id="h9K-pW-URI"/>
+                <outlet property="hotelStarsLabel" destination="pUS-jG-B3c" id="Nvk-nc-Oq7"/>
+                <outlet property="locationLabel" destination="nNq-oc-mkH" id="sen-HT-Dub"/>
+                <outlet property="view" destination="Fsa-y7-Bjk" id="iJ6-4j-zJO"/>
+            </connections>
+            <point key="canvasLocation" x="18.320610687022899" y="20.774647887323944"/>
+        </collectionViewCell>
+    </objects>
+</document>

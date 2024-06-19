@@ -23,6 +23,7 @@ class RoomTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         UIHelper.roundCorners(of: roomImageView, with: 20)
+        contentView.backgroundColor = UIColor(hexString: K.BrandColor.secondry)
     }
     
 }

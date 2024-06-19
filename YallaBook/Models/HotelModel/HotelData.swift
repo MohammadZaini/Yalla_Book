@@ -30,9 +30,4 @@ class HotelData: Object {
         self.rating = rating
         self.image = image
     }
-    
-//    static func incrementId() -> Int {
-//        let realm = try! Realm()
-//        return (realm.objects(HotelData.self).max(ofProperty: "hotelId") as Int? ?? 0) + 1
-//    }
 }

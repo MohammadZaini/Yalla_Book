@@ -20,17 +20,5 @@ struct HotelLogic {
     
     init() {
         getAllHotels()
-    }
-
-//    func drawStars(numberOfStars: Int) -> String {
-//        
-//        var starsString: String = ""
-//        for _ in 1...numberOfStars {
-//            
-//            starsString += "\(UIImage(systemName: "star.fill") ?? UIImage())"
-//        }
-//        print(starsString)
-//        return starsString
-//    }
-    
+    }    
 }

@@ -19,6 +19,9 @@ class HotelsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerHotelCardCell()
+//        let realm = try! Realm()
+//        print(realm.configuration.fileURL)
+        view.backgroundColor = UIColor(hexString: K.BrandColor.secondry)
     }
     
     private func registerHotelCardCell() {

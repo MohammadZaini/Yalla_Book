@@ -12,13 +12,12 @@ class RoomsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var typePickerView: UIPickerView!
-    @IBOutlet weak var pricePickerView: UIPickerView!
     @IBOutlet weak var bedPickerView: UIPickerView!
     
     @IBOutlet weak var noRoomsView: UIView!
     private var roomLogic = RoomLogic()
     private var sortAscending = true
-
+    
     var selectedHotel: HotelData? {
         didSet {
             loadRooms()
@@ -34,14 +33,12 @@ class RoomsViewController: UIViewController {
     
     private func setupUI() {
         UIHelper.roundCorners(of: typePickerView, with: 20)
-        UIHelper.roundCorners(of: pricePickerView, with: 20)
         UIHelper.roundCorners(of: bedPickerView, with: 20)
         
+        typePickerView.selectRow(roomLogic.roomTypes.count - 1, inComponent: 0, animated: true)
         typePickerView.backgroundColor = UIColor(hexString: K.BrandColor.primary)
-        pricePickerView.backgroundColor = UIColor(hexString: K.BrandColor.primary)
         bedPickerView.backgroundColor = UIColor(hexString: K.BrandColor.primary)
         typePickerView.setValue(UIColor(hexString: K.BrandColor.secondry), forKeyPath: "textColor")
-        pricePickerView.setValue(UIColor(hexString: K.BrandColor.secondry), forKeyPath: "textColor")
         bedPickerView.setValue(UIColor(hexString: K.BrandColor.secondry), forKeyPath: "textColor")
         noRoomsView.backgroundColor = UIColor(hexString: K.BrandColor.secondry)
         view.backgroundColor = UIColor(hexString: K.BrandColor.secondry)
@@ -59,13 +56,17 @@ class RoomsViewController: UIViewController {
     
     @IBAction func typeButtonPressed(_ sender: UIButton) {
         typePickerView.isHidden = false
-//        pricePickerView.isHidden = false
-//        bedPickerView.isHidden = false
     }
+    
     @IBAction func sortByPricePressed(_ sender: UIButton) {
         
         sortAscending = !sortAscending
         roomLogic.sortRoomsByPrice(sortAscending)
+        tableView.reloadData()
+    }
+    
+    @IBAction func numberOfBedsButtonPressed(_ sender: UIButton) {
+        bedPickerView.isHidden = false
         tableView.reloadData()
     }
 }
@@ -95,36 +96,36 @@ extension RoomsViewController: UITableViewDataSource {
             
         }
         
-//        let myRoom = RoomData(hotelId: selectedHotel?.hotelId, type: "Delux", price: 89, image: "No image", roomDescription: "A cozy and comfortable room designed for solo travelers. The room features a single bed, a work desk, a flat-screen TV, and an en-suite bathroom with a shower. Ideal for business travelers or short stays.", numberOfBeds: 2, rating: 4, number: 178)
-//        
-//       
-//        do {
-//            try realm.write {
-//                
-//                realm.add(room)
-//                
-//                selectedHotel?.rooms.append(myRoom)
-//                
-//                realm.add(hotel!)
-//            }
-//        }  catch {
-//            print(error.localizedDescription)
-//        }
+        //        let myRoom = RoomData(hotelId: selectedHotel?.hotelId, type: "Delux", price: 89, image: "No image", roomDescription: "A cozy and comfortable room designed for solo travelers. The room features a single bed, a work desk, a flat-screen TV, and an en-suite bathroom with a shower. Ideal for business travelers or short stays.", numberOfBeds: 2, rating: 4, number: 178)
+        //
+        //
+        //        do {
+        //            try realm.write {
+        //
+        //                realm.add(room)
+        //
+        //                selectedHotel?.rooms.append(myRoom)
+        //
+        //                realm.add(hotel!)
+        //            }
+        //        }  catch {
+        //            print(error.localizedDescription)
+        //        }
         
         //        if let room = rooms?[indexPath.row] {
         //            cell.roomImageView.image = UIImage(named: "hotelImage")
         //            cell.roomPrice.text = String(room.number)
         //            cell.roomRating.text = String(room.rating) + " Stars"
         //            cell.roomType.text  = room.type
-        //            
-        //            
+        //
+        //
         //            do {
         //                try realm.write {
-        //                    
+        //
         //                    realm.add(room)
-        //                    
+        //
         //                    hotel?.rooms.append(room)
-        //                    
+        //
         //                    realm.add(hotel!)
         //                }
         //            }  catch {
@@ -142,7 +143,7 @@ extension RoomsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220
     }
-        
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: K.roomDetailsSegue, sender: self)
     }
@@ -163,24 +164,22 @@ extension RoomsViewController: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return roomLogic.roomTypes.count
+        return pickerView.tag == 0 ? roomLogic.roomTypes.count : roomLogic.bedsNumber.count
     }
 }
 
 //MARK: - UI Picker View Delegate
 extension RoomsViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return roomLogic.roomTypes[row]
+        
+        return pickerView.tag == 0 ? roomLogic.roomTypes[row] : String(roomLogic.bedsNumber[row])
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        typePickerView.isHidden = true
         
-        roomLogic.filterRoomsBy(type: roomLogic.roomTypes[row])
+        pickerView.tag == 0 ? roomLogic.filterRoomsBy(type: roomLogic.roomTypes[row]) : roomLogic.filterRoomsBy(numberOfBeds: roomLogic.bedsNumber[row])
+        
+        pickerView.isHidden = true
         tableView.reloadData()
-        
-        
     }
-    
-    
 }

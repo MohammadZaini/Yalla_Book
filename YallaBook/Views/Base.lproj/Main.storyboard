@@ -124,11 +124,14 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Beds">
                                             <color key="baseBackgroundColor" red="0.65317541359999998" green="0.50863784550000002" blue="0.35290819410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="numberOfBedsButtonPressed:" destination="pun-GX-bD3" eventType="touchUpInside" id="iSR-Uw-Ry8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fhn-ST-VzL">
-                                <rect key="frame" x="10" y="154" width="131" height="84"/>
+                                <rect key="frame" x="10" y="154" width="160" height="113"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65317541359999998" green="0.50863784550000002" blue="0.35290819410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
@@ -136,16 +139,7 @@
                                     <outlet property="delegate" destination="pun-GX-bD3" id="9co-U3-b45"/>
                                 </connections>
                             </pickerView>
-                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acy-2F-qt0">
-                                <rect key="frame" x="153" y="154" width="131" height="84"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.65317541359999998" green="0.50863784550000002" blue="0.35290819410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="pun-GX-bD3" id="1hg-X0-Xhd"/>
-                                    <outlet property="delegate" destination="pun-GX-bD3" id="vvM-Vz-qF4"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-BJ-LIV">
+                            <pickerView hidden="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-BJ-LIV">
                                 <rect key="frame" x="293" y="154" width="131" height="84"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65317541359999998" green="0.50863784550000002" blue="0.35290819410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -171,7 +165,6 @@
                     <connections>
                         <outlet property="bedPickerView" destination="inZ-BJ-LIV" id="CoN-cl-xpw"/>
                         <outlet property="noRoomsView" destination="iMF-lW-vl1" id="EHE-N5-AEs"/>
-                        <outlet property="pricePickerView" destination="acy-2F-qt0" id="DCK-NV-Qvh"/>
                         <outlet property="tableView" destination="be6-6G-PIX" id="F4D-JN-Fnb"/>
                         <outlet property="typePickerView" destination="Fhn-ST-VzL" id="G08-0W-ivO"/>
                         <segue destination="fyd-ef-FLn" kind="show" identifier="goToRoomDetails" id="5iO-XQ-IAf"/>

@@ -19,13 +19,19 @@ class HotelsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerHotelCardCell()
+        setupUI()
 //        let realm = try! Realm()
 //        print(realm.configuration.fileURL)
-        view.backgroundColor = UIColor(hexString: K.BrandColor.secondry)
+        
     }
     
     private func registerHotelCardCell() {
         collectionView.register(UINib(nibName: K.hotelCardNibName, bundle: nil), forCellWithReuseIdentifier: K.hotelCardCellIdentfier)
+    }
+    
+    private func setupUI () {
+        view.backgroundColor = UIColor(hexString: K.BrandColor.secondry)
+        collectionView.backgroundColor = UIColor(hexString: K.BrandColor.secondry)
     }
 }
 
